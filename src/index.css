@@ -6,6 +6,7 @@
 body{
   background-color: rgb(235, 235, 155);
   overflow-x: hidden;
+  margin: 0;
 }
 .background{
    /* background-image: url("logo/gradient.jpg"); */
@@ -22,6 +23,7 @@ body{
   color: white;
   margin-left: 1rem;
 }
+
 .cart-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -78,7 +80,7 @@ nav ul{
   list-style: none;
 }
 header{
-  background-color:  rgb(40, 45, 48);
+  background-color: rgb(40, 45, 48);
   padding: 1rem;
 }
 .search_bar{
@@ -180,7 +182,7 @@ header{
 }
 nav li{
   display: inline-block;
-  margin-left: 3rem;
+  margin-left: 5rem;
   border-radius: 2rem;
   width: 7rem;
   text-align: center;
@@ -224,6 +226,7 @@ div img{
 ul {
   display: flex;
   justify-content: end;
+  margin-right: 1.3rem;
   font-size: 1.5rem;
 }
 @media(max-width: 768px){

@@ -14,7 +14,6 @@ function Header() {
             alt="User profile"
           />
         </a>
-
         <a href="cart.html">
           <img
             id="cartLogo"
