@@ -3,6 +3,7 @@ import logoBanner from "./logo/banner (2).jpg";
 import gourmetLogo from "./logo/specials.jpg";
 import percentLogo from "./logo/off.jpg";
 import bookLogo from "./logo/book.jpg";
+import { Link } from "react-router-dom";
 
 function Home(){
   return(
@@ -25,7 +26,9 @@ function Home(){
             <img className="long" src={gourmetLogo}
             alt="Specials Logo"/>
           </div>
-           <a href="specials.html"><h2>Specials</h2></a>
+           <Link to="/specials">
+              <h2>Specials</h2>
+           </Link>
         </article>
 
         <article className="lowerNav">
@@ -35,17 +38,21 @@ function Home(){
           <div className="long">
             <img className="long" src={percentLogo} alt="Off logo"/>
           </div>
-           <a href="percent.html"><h2>50% OFF</h2></a>
+           <Link to="/percent">
+              <h2>50% OFF</h2>
+          </Link>
         </article>
 
          <article className="lowerNav">
           <div className="para">
-            <p>Don't Wait, Book Now.</p>
+            <p>Don't Wait, Reserve Now.</p>
           </div>
           <div className="long">
             <img className="book_table" src={bookLogo} alt="Book logo"/>
           </div> 
-          <a href="book_table.html"><h2>Book a Table</h2></a>    
+          <Link to="/booking">
+            <h2>Book a Table</h2>
+          </Link>  
         </article>
       </section>
     </div>

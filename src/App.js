@@ -8,12 +8,17 @@ import Menu from "./Menu";
 import Search from "./Search";
 import SearchBar from "./SearchBar";
 import Cart from "./Cart";
+import Percent from"./Percent";
+import Specials from "./Specials";
+import Main from "./Main";
+import ConfirmedBooking from "./ConfirmedBooking";
+
 import Contact from "./Contact";
 import Order from "./Order";
-
 import footerLogo from "./logo/Asset 20@4x.png";
 
 function App() {
+
   return (
     <>
       {/* Global Layout */}
@@ -29,6 +34,10 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/order" element={<Order />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/booking" element={<Main />}/>
+        <Route path="/specials" element={<Specials />} />
+        <Route path="/percent" element={<Percent />} />
+        <Route path="/confirmedBooking" element={<ConfirmedBooking />}/>
       </Routes>
 
       {/* Footer */}
@@ -45,6 +54,6 @@ function App() {
       </footer>
     </>
   );
-}
+};
 
 export default App;

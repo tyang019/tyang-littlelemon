@@ -2,6 +2,7 @@ import starters from "./logo/starters2.jpg";
 import mainCourse from "./logo/main-course.jpg";
 import desserts from"./logo/desserts.jpg";
 import sideSalads from"./logo/sides.jpg";
+import beverages from "./logo/beverages (2).jpg";
 
 export const menuItems2 = [
   {
@@ -38,6 +39,15 @@ export const menuItems2 = [
       { name:"Mashed Potato Gravy", price: 24.95},
       { name: "Macaroni Cheese", price: 15.65},
       { name: "Cranberry Spring Salad", price: 13.87},
+    ],
+  },
+  {
+    category: "Beverages",
+    img: beverages,
+    items: [
+      { name: "Navam", price: 4.25},
+      { name: "Strawberry Bourbon Cocktail", price: 13.75,},
+      { name: "Lava Flow", price: 16.95}
     ],
   },
 ];

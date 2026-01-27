@@ -17,11 +17,12 @@ function Menu() {
 
             <div>
               {category.items.map((item, i) => (
-                <p key={i}>
-                  {item.name}..........  ${item.price}
+                <p className="descItems" key={i}>
+                  {item.name} <div className="descItems2">${item.price}</div>
                 </p>
               ))}
             </div>
+            
           </article>
         </section>
       ))}
