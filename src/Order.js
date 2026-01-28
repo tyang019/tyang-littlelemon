@@ -61,7 +61,7 @@ function Order() {
                   className="cart-image"
                 />
                 <p>{item.name}</p>
-                <h1>${item.price.toFixed(2)}</h1>
+                <>${item.price.toFixed(2)}</>
 
                 <button onClick={() => removeItem(index)}>Remove</button>
               </div>
