@@ -41,24 +41,24 @@ function Contact() {
             <article style={cardStyle}>
               <h1 style={{ fontSize: "25px" }}>Location</h1>
               <img src={gpsIcon} style={iconStyle} alt="Location" />
-              <p style={textStyle}>1234 Lemon Street, Citrus City, TY 12345</p>
-              <p style={textStyle}>Phone: (123) 456-7890</p>
+              <p style={{fontSize: "20px"}}>1234 Lemon Street, Citrus City, TY 12345</p>
+              <p style={{fontSize: "20px"}}>Phone: (123) 456-7890</p>
             </article>
 
             {/* Mail */}
             <article style={cardStyle}>
               <h1 style={{ fontSize: "25px" }}>Mail</h1>
               <img src={mailIcon} style={iconStyle} alt="Mail" />
-              <p style={textStyle}>Email: contact@littlelemon.com</p>
-              <p style={textStyle}>Alternative Email: yang.tortrong@yahoo.com</p>
+              <p style={{fontSize: "20px"}}>Email: contact@littlelemon.com</p>
+              <p style={{fontSize: "20px"}}>Alternative Email: yang.tortrong@yahoo.com</p>
             </article>
 
             {/* Hours */}
             <article style={cardStyle}>
               <h1 style={{ fontSize: "25px" }}>Hours</h1>
               <img src={clockIcon} style={iconStyle} alt="Hours" />
-              <p style={textStyle}>Monday - Friday: 9:00 AM - 9:00 PM</p>
-              <p style={textStyle}>Saturday - Sunday: 10:00 AM - 8:00 PM</p>
+              <p style={{fontSize: "20px"}}>Monday - Friday: 9:00 AM - 9:00 PM</p>
+              <p style={{fontSize: "20px"}}>Saturday - Sunday: 10:00 AM - 8:00 PM</p>
             </article>
           </section>
         </article>
@@ -78,8 +78,7 @@ function Contact() {
 
         <article style={formCardStyle}>
           <h1>Send us a message</h1>
-
-          <form className="contact-form" onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit}>
             <label>First Name:</label>
             <input
               type="text"
@@ -119,6 +118,7 @@ function Contact() {
             />
 
             <textarea
+            style={{}}
               name="message"
               placeholder="Please share with us what you would like us to know"
               rows="4"

@@ -21,7 +21,7 @@ function Navigation() {
         </li>
         <li>
           <Link to="/order">
-            <button>Order Online</button>
+            <button>Order here</button>
           </Link>
         </li>
       </ul>

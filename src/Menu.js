@@ -2,13 +2,15 @@ import { menuItems2 } from "./menuData";
 
 function Menu() {
   return (
-    <div className="menu_items">
+    <div>
+    <section><article><h1>Menu</h1></article></section>
+    <section className="menu_items">
       {menuItems2.map((category, index) => (
-        <section key={index}>
-          <article className="menuText">
-            <h1>{category.category} <hr  style={{
+          <article key={index} className="menuText">
+            <h1>{category.category} <hr style={{
                       width: "auto", 
                       maxWidth: "100%", 
+                      fontSize: "20px",
                       height: "1px", 
                       backgroundColor: "black", 
                       border: "none" }}/></h1>
@@ -17,7 +19,6 @@ function Menu() {
               alt={category.category}
               className="imgResize"
             />
-
             <div>
               {category.items.map((item, i) => (
                 <p className="descItems" key={i}>
@@ -25,10 +26,9 @@ function Menu() {
                 </p>
               ))}
             </div>
-            
           </article>
-        </section>
       ))}
+    </section>
     </div>
   );
 }

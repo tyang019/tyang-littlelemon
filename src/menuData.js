@@ -46,7 +46,7 @@ export const menuItems2 = [
     img: beverages,
     items: [
       { name: "Navam", price: 4.25},
-      { name: "Strawberry Bourbon Cocktail", price: 13.75,},
+      { name: "Strawberry Cocktail", price: 13.75,},
       { name: "Lava Flow", price: 16.95}
     ],
   },
