@@ -97,7 +97,10 @@ function BookingForm({ availableTimes, dispatch, submitForm}) {
               <option>Anniversary</option>
             </select>
 
-            <button type="button" onClick={() => {
+            <button 
+              type="button" 
+              aria-label="On Click"
+              onClick={() => {
               setDate("");
               setTime("");
               setGuest(1);

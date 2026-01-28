@@ -1,11 +1,13 @@
+import coconut from "./logo/coconut.jpg";
+
 export const menuItems = [
   {
     name: "Coconut Creame Pie", 
     calories: 450, 
     price: 14.99, 
     paragraph: "A rich and creamy pie made with a flaky crust, filled with coconut custard, and topped with whipped cream and toasted coconut flakes, pumpkin spice, whole milk, sugar, ", 
-    image: "logo/coconut.jpg"}, 
-
+    image: coconut
+  }, 
   {
     name: "Pumpkin Pie", 
     calories: 400, 

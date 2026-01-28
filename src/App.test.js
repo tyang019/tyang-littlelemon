@@ -80,3 +80,30 @@ test("reads booking data from localStorage on mount", () => {
   expect(screen.getByLabelText(/select date/i).value).toBe("2026-01-02");
   expect(screen.getByLabelText(/select time/i).value).toBe("17:00");
 });
+
+test("date input has required attribute and correct type", () => {
+   render(<BookingForm availableTimes={[]} dispatch={jest.fn()} submitForm={jest.fn()} />);
+
+  const dateInput = screen.getByLabelText(/select date/i);
+
+  expect(dateInput).toHaveAttribute('type', 'date');
+  expect(dateInput).toBeRequired();
+})
+test("select a time is required", () => {
+  render (<BookingForm availableTimes={["16:00"]} dispatch={jest.fn} submitForm={jest.fn}/>);
+  const timeInput = screen.getByLabelText(/select time/i); 
+  expect(timeInput).toBeRequired();
+  })
+test("Select the number of guests", () => {
+  render(<BookingForm availableTimes={["16:00"]} dispatch={jest.fn} submitForm={jest.fn}/>);
+  const guestInput = screen.getByLabelText(/number of guests/i);
+  expect(guestInput).toHaveAttribute('type', 'number');
+  expect(guestInput).toHaveAttribute('min', '1');
+  expect(guestInput).toHaveAttribute('max', '10');
+  expect(guestInput).toBeRequired();
+})
+test("Submit button", () =>{
+  render(<BookingForm availableTimes={[]} dispatch={jest.fn} submitForm={jest.fn}/>);
+  const submitInput = screen.getByRole('button', {name: /submit/i});
+  expect(submitInput).toBeDisabled();
+})
