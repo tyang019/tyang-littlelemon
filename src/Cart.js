@@ -16,7 +16,7 @@ function Cart() {
 
   return (
     <div className="cart-container">
-      {cart.length === 0 && <h1>Your cart is empty</h1>}
+      {cart.length === 0 && <section><article><h1>Your cart is empty</h1></article></section>}
       {cart.map((item, index) => (
         <div className="cart-item" key={index}>
           <img src={item.image} alt={item.name} className="cart-image" />

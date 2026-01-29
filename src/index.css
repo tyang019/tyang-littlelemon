@@ -292,6 +292,7 @@ h3{
 .bc_menu{
   background-color: beige;
   border-radius: 2rem;
+  margin-bottom: 10px;
 }
 .menu_items2{
   display: flex;
@@ -312,6 +313,7 @@ h3{
   width: 100%;
   max-width: 480px;
   box-sizing: border-box;
+  padding: 1rem;
 }
 .descItems{
   display: flex;
@@ -352,7 +354,7 @@ h3{
   text-align: start;
   padding: 0 1rem 0 1rem;
   border-radius: 2rem;
-  font-size: 22px;
+  font-size: 20px;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 article{
@@ -364,8 +366,7 @@ article{
   border: solid 1px rgb(40, 45, 48);
   width: 25rem;
   height: 35rem;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  object-fit: cover;
+  
 }
 article h2{
   cursor: pointer;

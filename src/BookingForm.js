@@ -41,7 +41,7 @@ function BookingForm({ availableTimes, dispatch, submitForm}) {
     <>
       <section>
         <article className="menuText">
-          <form className="menu_items" onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit}>
             <h1>Reserve Table Form</h1>
 
             <label htmlFor="res-date">Select Date</label>
@@ -57,10 +57,17 @@ function BookingForm({ availableTimes, dispatch, submitForm}) {
             }}
               required
             />
-
-            <label htmlFor="res-time">Select Time</label>
-            <img src={clock} alt="clock icon"  aria-hidden="true" />
-            <select
+            <table style={{
+                display: "flex", 
+                justifyContent: "center", alignItems: "center",
+                padding: "1rem"
+                }}>
+             <img src={clock} alt="clock icon"  aria-hidden="true" 
+             />
+              </table>
+        <div>
+            <label style={{padding: "1rem"}} htmlFor="res-time">Select Time</label>
+              <select
               id="res-time"
               value={time}
               onChange={(e) => setTime(e.target.value)}
@@ -73,9 +80,10 @@ function BookingForm({ availableTimes, dispatch, submitForm}) {
                 </option>
               ))}
             </select>
+          </div>
 
-
-            <label htmlFor="guest">Number of guests</label>
+          <div style={{padding: "1rem"}}>
+              <label htmlFor="guest">Number of guests</label>
             <input
               type="number"
               min="1"
@@ -85,8 +93,7 @@ function BookingForm({ availableTimes, dispatch, submitForm}) {
               onChange={(e) => setGuest(Number(e.target.value))}
               required
             />
-
-            <label htmlFor="occasion">Occasion</label>
+              <label style={{padding: "1rem"}} htmlFor="occasion">Occasion</label>
             <select
               id="occasion"
               value={occasion}
@@ -96,8 +103,9 @@ function BookingForm({ availableTimes, dispatch, submitForm}) {
               <option>Birthday</option>
               <option>Anniversary</option>
             </select>
-
-            <button 
+          </div>
+            <div>
+              <button 
               type="button" 
               aria-label="On Click"
               onClick={() => {
@@ -107,8 +115,8 @@ function BookingForm({ availableTimes, dispatch, submitForm}) {
               setOccasion("None");
               localStorage.removeItem('booking'); 
             }}>Cancel</button>
-
             <button type="submit" disabled={!isFormValid}>Submit</button>
+            </div>
           </form>
         </article>
       </section>

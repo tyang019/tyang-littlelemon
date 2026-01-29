@@ -20,7 +20,7 @@ function Home(){
       <section>
         <article className="lowerNav">
           <div className="para">
-            <p>Experience gourmet perfection.</p>
+            <p>Experience gourmet perfection</p>
             </div>
           <div>
             <img className="long" src={gourmetLogo}
@@ -33,7 +33,7 @@ function Home(){
 
         <article className="lowerNav">
           <div className="para">
-             <p>Feast more. Save more!</p>
+             <p>Feast more. Save more</p>
           </div>
           <div className="long">
             <img className="long" src={percentLogo} alt="Off logo"/>
@@ -45,13 +45,13 @@ function Home(){
 
          <article className="lowerNav">
           <div className="para">
-            <p>Don't Wait, Reserve Now.</p>
+            <p>Reserve a table.</p>
           </div>
           <div className="long">
             <img className="book_table" src={bookLogo} alt="Book logo"/>
           </div> 
           <Link to="/booking">
-            <h2>Book a Table</h2>
+            <h2>Book Table</h2>
           </Link>  
         </article>
       </section>

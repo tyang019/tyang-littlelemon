@@ -26,30 +26,9 @@ function Order() {
   return (
     <div>
     <section>
-      <article><h1>Order Items</h1></article>
-      <article className="menu_items2">
-          {menuItems.map((item, index) => (
-            <div className="bc_menu">
-               <h1 style={{fontSize: "2rem", margin: "1rem"}}>{item.name}<hr 
-                    style={{
-                      width: "auto", 
-                      margin: "0 auto", 
-                      maxWidth: "90%", 
-                      height: "1px", 
-                      backgroundColor: "black", 
-                      border: "none" }}></hr></h1>
-                    <p>{item.calories} calories</p>
-                    <img src={item.image} alt={item.name} />
-                      <p className="menu_description">{item.paragraph}</p>
-                      <strong>${item.price.toFixed(2)}</strong>
-                        <button className="menuBtn" onClick={() => addToCart(item)}>
-                          Add to Cart
-                        </button>
-            </div>
-      ))}
-
-      {cart.length === 0 ? (
-        <h1>Your cart is empty.</h1>
+      <article><h1>Order Items</h1>{cart.length === 0 ? (
+        <article>
+          <h1>(Cart Empty)</h1></article>
       ) : (
         <>
           <div className="cart-container">
@@ -72,7 +51,28 @@ function Order() {
 
           <button className="checkout-btn">Proceed to Checkout</button>
         </>
-      )}
+      )}</article>
+      
+      <article className="menu_items2">
+          {menuItems.map((item, index) => (
+            <div className="bc_menu">
+               <h1 style={{fontSize: "2rem", margin: "1rem"}}>{item.name}<hr 
+                    style={{
+                      width: "auto", 
+                      margin: "0 auto", 
+                      maxWidth: "90%", 
+                      height: "1px", 
+                      backgroundColor: "black", 
+                      border: "none" }}></hr></h1>
+                    <p>{item.calories} calories</p>
+                    <img className="menu-image" src={item.image} alt={item.name} />
+                      <p className="menu_description">{item.paragraph}</p>
+                      <strong>${item.price.toFixed(2)}</strong>
+                        <button className="menuBtn" onClick={() => addToCart(item)}>
+                          Add to Cart
+                        </button>
+            </div>
+      ))}
       </article>
     </section>
   </div>
