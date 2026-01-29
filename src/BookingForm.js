@@ -43,7 +43,6 @@ function BookingForm({ availableTimes, dispatch, submitForm}) {
         <article className="menuText">
           <form onSubmit={handleSubmit}>
             <h1>Reserve Table Form</h1>
-
             <label htmlFor="res-date">Select Date</label>
             <input
               type="date"
@@ -64,8 +63,8 @@ function BookingForm({ availableTimes, dispatch, submitForm}) {
                 }}>
              <img src={clock} alt="clock icon"  aria-hidden="true" 
              />
-              </table>
-        <section>
+            </table>
+        <article>
             <label style={{padding: "1rem"}} htmlFor="res-time">Select Time</label>
               <select
               id="res-time"
@@ -80,8 +79,8 @@ function BookingForm({ availableTimes, dispatch, submitForm}) {
                 </option>
               ))}
             </select>
-          </section>
-          <section>
+          </article>
+          <article>
               <label htmlFor="guest">Number of guests</label>
             <input
               type="number"
@@ -102,19 +101,20 @@ function BookingForm({ availableTimes, dispatch, submitForm}) {
               <option>Birthday</option>
               <option>Anniversary</option>
             </select>
-          </section>
+          </article>
+
             <article>
-              <button 
-              type="button" 
-              aria-label="On Click"
-              onClick={() => {
-              setDate("");
-              setTime("");
-              setGuest(1);
-              setOccasion("None");
-              localStorage.removeItem('booking'); 
-            }}>Cancel</button>
-            <button type="submit" disabled={!isFormValid}>Submit</button>
+                <button 
+                type="button" 
+                aria-label="On Click"
+                onClick={() => {
+                setDate("");
+                setTime("");
+                setGuest(1);
+                setOccasion("None");
+                localStorage.removeItem('booking'); 
+              }}>Cancel</button>
+              <button type="submit" disabled={!isFormValid}>Submit</button>
             </article>
           </form>
         </article>

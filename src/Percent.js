@@ -1,7 +1,7 @@
 function Percent(){
   return(
     <>
-     <h1>under maintenance</h1>
+     <h1>Coming Soon</h1>
     </>
   );
 };

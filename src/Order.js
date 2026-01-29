@@ -26,7 +26,10 @@ function Order() {
   return (
     <div>
     <section>
-      <article><h1>Order Items</h1>{cart.length === 0 ? (
+      <article><h1>Order Items<hr style={{
+          color: "black",
+          width: "30rem",
+          }}/></h1>{cart.length === 0 ? (
         <article>
           <h1>(Cart Empty)</h1></article>
       ) : (

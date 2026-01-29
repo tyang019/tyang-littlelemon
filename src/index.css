@@ -182,10 +182,11 @@ header{
 }
 nav li{
   display: inline-block;
-  margin-left: 5rem;
+  margin-inline:auto ;
+  padding-top: 1rem;
   border-radius: 2rem;
-  width: 7rem;
   text-align: center;
+  justify-content: space-evenly;
 }
 nav li:hover{
   transition: 500ms;
@@ -296,6 +297,7 @@ h3{
 }
 .menu_items2{
   display: flex;
+  justify-content: space-evenly;
   grid-gap: 20px; 
   width: 100%;
   height: auto;
@@ -317,11 +319,10 @@ h3{
 }
 .descItems{
   display: flex;
-  margin-left: 2rem;
+  margin-left: auto;
 }
 .descItems2{
   margin-left: auto;  
-  margin-right: 2rem;
 }
 .menu-image{
   object-fit: cover;

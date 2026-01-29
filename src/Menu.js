@@ -3,7 +3,10 @@ import { menuItems2 } from "./menuData";
 function Menu() {
   return (
     <div>
-    <section><article><h1>Menu</h1></article></section>
+    <section><article><h1>Menu  <hr style={{
+          color: "black",
+          width: "30rem",
+          }}/></h1></article></section>
     <section className="menu_items">
       {menuItems2.map((category, index) => (
           <article key={index} className="menuText">

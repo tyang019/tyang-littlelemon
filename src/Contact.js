@@ -33,7 +33,11 @@ function Contact() {
   return (
     <>
       <section>
-         <article><h1>About us</h1></article>
+         <article><h1>About <hr style={{
+          color: "black",
+          width: "30rem",
+          }}/>
+          </h1></article>
         <article style={{
           backgroundColor:"white", 
           width: "95%",
@@ -54,6 +58,7 @@ function Contact() {
                 }}
             />      
         <section style={{
+          display: "grid",
           backgroundColor: "beige",
           borderRadius: "2rem",
           columnGap:"1rem",
@@ -99,6 +104,7 @@ function Contact() {
         <section>
           <article style={formCardStyle}>
           <h1>Send a message</h1>
+          
           <form onSubmit={handleSubmit}>
             <label>First Name:</label>
             <input
@@ -108,7 +114,7 @@ function Contact() {
               onChange={handleChange}
               required
             />
-                <label>Last Name:</label>
+            <label>Last Name:</label>
                 <input
                   type="text"
                   name="lastName"
@@ -117,7 +123,7 @@ function Contact() {
                   required
                 />
             <article>
-                <label>Phone Number:</label>
+            <label>Phone Number:</label>
                 <input
                   type="tel"
                   name="phone"
@@ -126,7 +132,7 @@ function Contact() {
                   onChange={handleChange}
                   required
                 />
-                <label>Email Address:</label>
+            <label>Email Address:</label>
                 <input
                   type="email"
                   name="email"
@@ -161,7 +167,6 @@ function Contact() {
     </>
   );
 }
-
 /* ===== Styles ===== */
 
 const cardStyle = {
