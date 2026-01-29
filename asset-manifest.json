@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tyang-littlelemon/static/css/main.41c14661.css",
-    "main.js": "/tyang-littlelemon/static/js/main.e990660a.js",
+    "main.js": "/tyang-littlelemon/static/js/main.fdeb9cf4.js",
     "static/js/453.6b563224.chunk.js": "/tyang-littlelemon/static/js/453.6b563224.chunk.js",
     "static/media/book.jpg": "/tyang-littlelemon/static/media/book.f976a77ade0c0c0e73c7.jpg",
     "static/media/turkey.png": "/tyang-littlelemon/static/media/turkey.97380c8e0932e4b43ded.png",
@@ -39,11 +39,11 @@
     "static/media/food-tray.png": "/tyang-littlelemon/static/media/food-tray.a1367ebe8a5d3e41bf6f.png",
     "index.html": "/tyang-littlelemon/index.html",
     "main.41c14661.css.map": "/tyang-littlelemon/static/css/main.41c14661.css.map",
-    "main.e990660a.js.map": "/tyang-littlelemon/static/js/main.e990660a.js.map",
+    "main.fdeb9cf4.js.map": "/tyang-littlelemon/static/js/main.fdeb9cf4.js.map",
     "453.6b563224.chunk.js.map": "/tyang-littlelemon/static/js/453.6b563224.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.41c14661.css",
-    "static/js/main.e990660a.js"
+    "static/js/main.fdeb9cf4.js"
   ]
 }
