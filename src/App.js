@@ -27,7 +27,8 @@ function App() {
 
       {/* Page Routing */}
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Navigate to="/Home" replace />} />
+         <Route path="/home" element={<Home />} />
         <Route path="/menu" element={<Menu />} />
         <Route path="/search" element={<Search />} />
         <Route path="/searchBar" element={<SearchBar />}/>
