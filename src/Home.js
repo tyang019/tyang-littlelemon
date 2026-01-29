@@ -33,7 +33,7 @@ function Home(){
 
         <article className="lowerNav">
           <div className="para">
-             <p>Feast more. Save more</p>
+             <p>Save more</p>
           </div>
           <div className="long">
             <img className="long" src={percentLogo} alt="Off logo"/>
@@ -45,7 +45,7 @@ function Home(){
 
          <article className="lowerNav">
           <div className="para">
-            <p>Reserve a table.</p>
+            <p>Reserve a table</p>
           </div>
           <div className="long">
             <img className="book_table" src={bookLogo} alt="Book logo"/>

@@ -1,5 +1,5 @@
 import './index.css';
-import profilePic from "./logo/profile-picture.png";
+import profilePic from "./logo/profile-picture (1).png";
 import cartIcon from "./logo/shopping-cart.png";
 import logo from "./logo/Asset 16@4x.png";
 import { Link } from "react-router-dom";

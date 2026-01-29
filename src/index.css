@@ -53,13 +53,26 @@ body{
 }
 button{
   display: inline-block;
-  margin-left: 3rem;
   background-color:rgb(40, 45, 48);
   border-radius: 2rem;
-  width: 7rem;
   cursor: pointer;
   text-align: center;
   color: white;
+}
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  nav li {
+    width: 100%;
+    text-align: center;
+  }
+  nav button {
+    width: 90%;
+    max-width: 300px;
+  }
 }
 button:hover{
   background-color: rgb(240, 150, 70);
@@ -72,11 +85,22 @@ input, button{
   font-family: Bell MT;
   border-radius: 1rem;
   padding: 0.4rem;
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
   margin-top: 1rem;
   margin-left: 0.5rem;
 }
-nav ul{
-  text-align: end;
+nav {
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  margin: 0;
   list-style: none;
 }
 header{
@@ -84,7 +108,7 @@ header{
   padding: 1rem;
 }
 .search_bar{
-  width: 20rem;
+  width: auto;
 }
 .search-bar-position{
   display: flex;
@@ -184,6 +208,7 @@ nav li{
   display: inline-block;
   margin-inline:auto ;
   padding-top: 1rem;
+  padding-bottom: 1rem;
   border-radius: 2rem;
   text-align: center;
   justify-content: space-evenly;
@@ -224,18 +249,7 @@ div img{
     height: auto;
   }
 }
-ul {
-  display: flex;
-  justify-content: end;
-  margin-right: 1.3rem;
-  font-size: 1.5rem;
-}
 @media(max-width: 768px){
-    ul{
-    display: flex;
-    justify-content: end;
-    font-size: 1.5rem;
-  }
   li{
     display: block;
     padding: 0.5rem;
@@ -294,6 +308,7 @@ h3{
   background-color: beige;
   border-radius: 2rem;
   margin-bottom: 10px;
+  
 }
 .menu_items2{
   display: flex;
