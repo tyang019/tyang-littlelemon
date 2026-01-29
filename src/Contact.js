@@ -179,9 +179,6 @@ const iconStyle = {
   borderRadius: "1rem"
 };
 
-const textStyle = {
-  fontSize: "15px"
-};
 
 const formCardStyle = {
   backgroundColor: "rgb(241, 241, 189)",
@@ -189,16 +186,6 @@ const formCardStyle = {
   padding: "1rem",
   margin: "1rem",
   boxShadow: "1px 1px 7px rgb(84, 84, 84)"
-};
-
-const submitBtnStyle = {
-  cursor: "pointer",
-  marginTop: "15px",
-  padding: "8px 20px",
-  background: "#007bff",
-  color: "white",
-  border: "none",
-  borderRadius: "6px"
 };
 
 export default Contact;
