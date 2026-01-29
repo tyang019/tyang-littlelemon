@@ -33,19 +33,54 @@ function Contact() {
   return (
     <>
       <section>
-        <article>
-          <h1>Contacts</h1>
-
-          <section>
+         <article><h1>About us</h1></article>
+        <article style={{
+          backgroundColor:"white", 
+          width: "95%",
+          padding: "1rem",
+          display: "flex",
+          columnGap: "1rem"
+        }}>
+           <img
+              className="bc_menu"
+                src={messageFood}
+                alt="Food message"
+                style={{
+                  width: "fit-content",
+                  padding:"1rem",
+                  height: "400px",
+                  display: "block",
+                  boxShadow: "1px 1px 7px rgb(84, 84, 84)"
+                }}
+            />      
+        <section style={{
+          backgroundColor: "beige",
+          borderRadius: "2rem",
+          columnGap:"1rem",
+          textAlign: "left",
+          padding: "1rem"
+        }}>
+          <p style={{fontSize: "20px"}}>
+            Little Lemon Restaurant is a cozy Mediterranean eatery dedicated to bringing authentic flavors and fresh ingredients to every dish. Our menu features a wide variety of traditional recipes, from zesty appetizers to hearty main courses, all crafted with care and passion. Whether you’re joining us for a casual lunch, a family dinner, or a special celebration, Little Lemon offers a warm and inviting atmosphere that makes every visit memorable.
+          </p>
+          <p style={{fontSize: "20px"}}>
+            We believe that great food starts with quality ingredients. That’s why we source the freshest produce, locally whenever possible, and pair it with our signature spices and culinary expertise. Our friendly staff is committed to providing excellent service and ensuring that every guest leaves with a smile. Come experience the taste of the Mediterranean and discover why Little Lemon has become a favorite dining destination for our community.
+          </p>
+        </section>
+        </article>
+      </section>
+         <section>
+            <article><h1>Contact us</h1></article>
+            </section>
             {/* Location */}
-            <article style={cardStyle}>
+            <section> 
+               <article style={cardStyle}>
               <h1 style={{ fontSize: "25px" }}>Location</h1>
               <img src={gpsIcon} style={iconStyle} alt="Location" />
               <p style={{fontSize: "20px"}}>1234 Lemon Street, Citrus City, TY 12345</p>
               <p style={{fontSize: "20px"}}>Phone: (123) 456-7890</p>
             </article>
-
-            {/* Mail */}
+             {/* Mail */}
             <article style={cardStyle}>
               <h1 style={{ fontSize: "25px" }}>Mail</h1>
               <img src={mailIcon} style={iconStyle} alt="Mail" />
@@ -60,24 +95,10 @@ function Contact() {
               <p style={{fontSize: "20px"}}>Monday - Friday: 9:00 AM - 9:00 PM</p>
               <p style={{fontSize: "20px"}}>Saturday - Sunday: 10:00 AM - 8:00 PM</p>
             </article>
-          </section>
-        </article>
-      </section>
-
-      <section>
-        <img
-          src={messageFood}
-          alt="Food message"
-          style={{
-            width: "auto",
-            height: "450px",
-            display: "block",
-            boxShadow: "1px 1px 7px rgb(84, 84, 84)"
-          }}
-        />
-
-        <article style={formCardStyle}>
-          <h1>Send us a message</h1>
+        </section>
+        <section>
+          <article style={formCardStyle}>
+          <h1>Send a message</h1>
           <form onSubmit={handleSubmit}>
             <label>First Name:</label>
             <input
@@ -87,54 +108,56 @@ function Contact() {
               onChange={handleChange}
               required
             />
-
-            <label>Last Name:</label>
-            <input
-              type="text"
-              name="lastName"
-              value={formData.lastName}
-              onChange={handleChange}
-              required
-            />
-
-            <label>Phone Number:</label>
-            <input
-              type="tel"
-              name="phone"
-              placeholder="123-456-7890"
-              value={formData.phone}
-              onChange={handleChange}
-              required
-            />
-
-            <label>Email Address:</label>
-            <input
-              type="email"
-              name="email"
-              placeholder="example@example.com"
-              value={formData.email}
-              onChange={handleChange}
-              required
-            />
-
-            <textarea
-            style={{}}
-              name="message"
-              placeholder="Please share with us what you would like us to know"
-              rows="4"
-              value={formData.message}
-              onChange={handleChange}
-              required
-            />
-
-            <input
-              type="submit"
-              value="Submit"
-              style={submitBtnStyle}
-            />
+                <label>Last Name:</label>
+                <input
+                  type="text"
+                  name="lastName"
+                  value={formData.lastName}
+                  onChange={handleChange}
+                  required
+                />
+            <article>
+                <label>Phone Number:</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="123-456-7890"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  required
+                />
+                <label>Email Address:</label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="example@example.com"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                />
+              </article>
+              <article style={{
+                  padding: "1rem"
+                  }}>
+                  <textarea
+                  style={{
+                    borderRadius:"1rem",
+                    padding:"1rem"
+                  }}
+                    name="message"
+                    placeholder="Please share with us what you would like us to know"
+                    rows="8"
+                    
+                    value={formData.message}
+                    onChange={handleChange}
+                    required
+                />
+              </article>
+              <button type="submit"
+                value="Submit">Submit</button>
           </form>
         </article>
-      </section>
+    </section>
     </>
   );
 }
@@ -165,7 +188,7 @@ const formCardStyle = {
   border: "solid 0.1rem rgb(182, 182, 137)",
   padding: "1rem",
   margin: "1rem",
-  boxShadow: "1px 1px 3px black"
+  boxShadow: "1px 1px 7px rgb(84, 84, 84)"
 };
 
 const submitBtnStyle = {
