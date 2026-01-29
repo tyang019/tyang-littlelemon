@@ -65,7 +65,7 @@ function BookingForm({ availableTimes, dispatch, submitForm}) {
              <img src={clock} alt="clock icon"  aria-hidden="true" 
              />
               </table>
-        <div>
+        <section>
             <label style={{padding: "1rem"}} htmlFor="res-time">Select Time</label>
               <select
               id="res-time"
@@ -80,9 +80,8 @@ function BookingForm({ availableTimes, dispatch, submitForm}) {
                 </option>
               ))}
             </select>
-          </div>
-
-          <div style={{padding: "1rem"}}>
+          </section>
+          <section>
               <label htmlFor="guest">Number of guests</label>
             <input
               type="number"
@@ -103,8 +102,8 @@ function BookingForm({ availableTimes, dispatch, submitForm}) {
               <option>Birthday</option>
               <option>Anniversary</option>
             </select>
-          </div>
-            <div>
+          </section>
+            <article>
               <button 
               type="button" 
               aria-label="On Click"
@@ -116,7 +115,7 @@ function BookingForm({ availableTimes, dispatch, submitForm}) {
               localStorage.removeItem('booking'); 
             }}>Cancel</button>
             <button type="submit" disabled={!isFormValid}>Submit</button>
-            </div>
+            </article>
           </form>
         </article>
       </section>
