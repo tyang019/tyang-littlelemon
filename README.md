@@ -1,17 +1,58 @@
 # Little Lemon Restaurant
 
-A React-based web application for the Little Lemon restaurant that allows users to view the menu and reserve tables.
+A responsive React web application that allows customers to browse the menu and reserve a table online.
+
+
+## Screenshots
+### Homepage 
+![Homepage](screenshots/Homepage.png)
+
+![Menu](screenshots/Menu.png)
+
+![About](screenshots/About.png)
+
+![Order](screenshots/Order.png)
+
+![Booking](screenshots/Booking.png)
+
+
+## Live Demo 
+View the live site here: 
+tyang-littlelemon.vercel.app 
+
 
 ## Features
-- Table reservation form with validation
-- Dynamic available time selection
-- Accessible and semantic HTML structure
+- Interactive table reservation form
+- Dynamic time slot selection
 - Client-side form validation
+- Accessible semantic HTML
+- Responsive design (mobile, tablet, desktop)
 - Booking confirmation page
+
 
 ## Tech Stack
 - React
-- JavaScript
-- HTML5 / CSS3
+- JavaScript (ES6+)
+- HTML5
+- CSS3
 
-This project was completed as part of the Coursera Front-End Developer Capstone.
+
+## What I Learned
+- Managing state in React using hooks
+- Implementing controlled form components
+- Handling form validation logic
+- Building accessible UI components
+- Deploying a React app using Vercel
+
+
+## Installation
+1. Clone the repository
+2. Install dependencies:
+   npm install
+3. Start the development server:
+   npm start
+4. Open http://localhost:3000 in your browser
+
+
+## Acknowledgements
+This project was completed as part of the Meta Front-End Developer Professional Certificate on Coursera.
