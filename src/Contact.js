@@ -58,7 +58,6 @@ function Contact() {
                   maxWidth: "430px",
                   padding:"1rem",
                   height: "auto",
-                  padding: "1rem",
                   display: "block",
                   boxShadow: "1px 1px 7px rgb(84, 84, 84)"
                 }}
@@ -203,12 +202,6 @@ const cardStyle = {
   backgroundColor: "white",
   boxShadow: "1px 1px 3px black",
   
-};
-const formRowStyle = {
-  display: "flex",
-  alignItems: "center",
-  gap: "1rem",
-  marginBottom: "1rem",
 };
 
 const labelStyle = {
