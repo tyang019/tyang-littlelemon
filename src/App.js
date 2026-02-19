@@ -38,6 +38,7 @@ function App() {
         <Route path="/specials" element={<Specials />} />
         <Route path="/percent" element={<Percent />} />
         <Route path="/confirmedBooking" element={<ConfirmedBooking />}/>
+        <Route path="/book" element={<Main />}/>
       </Routes>
 
       {/* Footer */}

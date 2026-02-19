@@ -24,6 +24,11 @@ function Navigation() {
             <button>Order here</button>
           </Link>
         </li>
+        <li>
+          <Link to="/book">
+            <button>Book Table</button>
+          </Link>
+        </li>
       </ul>
     </nav>
   );
