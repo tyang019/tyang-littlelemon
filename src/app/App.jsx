@@ -1,23 +1,22 @@
-import "./App.css";
+import "../App.css";
 import { Routes, Route, Navigate } from "react-router-dom";
-import Header from "./components/Header";
-import Navigation from "./components/Nav";
-import Home from "./features/home/Home";
-import Menu from "./features/menu/Menu";
-import Search from "./Search";
-import SearchBar from "./SearchBar";
-import Cart from "./features/cart/Cart";
-import Percent from"./Percent";
-import Specials from "./Specials";
-import Main from "./Main";
-import ConfirmedBooking from "./ConfirmedBooking";
-import Contact from "./features/contact/Contact";
-import Order from "./features/order/Order";
-import footerLogo from "./assets/Asset 20@4x.png";
-import User from "./User";
+import Header from "../components/Header";
+import Navigation from "../components/Nav";
+import Home from "../features/home/Home";
+import Menu from "../features/menu/Menu";
+import Search from "../Search";
+import SearchBar from "../SearchBar";
+import Cart from "../features/cart/Cart";
+import Percent from "../Percent";
+import Specials from "../Specials";
+import Main from "../Main1";
+import ConfirmedBooking from "../ConfirmedBooking";
+import Contact from "../features/contact/Contact";
+import Order from "../features/order/Order";
+import footerLogo from "../assets/Asset 20@4x.png";
+import User from "../User";
 
-function App() {
-
+function App () {
   return (
     <>
       {/* Global Layout */}
@@ -27,14 +26,11 @@ function App() {
       {/* Page Routing */}
       <Routes>
         <Route path="/" element={<Navigate to="/home" replace />} />
-
         <Route path="/home" element={<Home />} />
-
         <Route path="/menu" element={<Menu />} />
         <Route path="/search" element={<Search />} />
         <Route path="/searchBar" element={<SearchBar />}/>
         <Route path="/contact" element={<Contact />} />
-
         <Route path="/order" element={<Order />} />
         <Route path="/user" element={<User />} />
         <Route path="/cart" element={<Cart />} />
@@ -59,6 +55,5 @@ function App() {
       </footer>
     </>
   );
-};
-
+}
 export default App;
