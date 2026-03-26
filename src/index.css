@@ -199,7 +199,7 @@ header{
   background-color: rgb(48, 48, 40);
   text-align: center;
   padding: 1rem 2rem 0rem 2rem;
-  background-image: url("logo/banner(1).jpg"); 
+  background-image: url("assets/banner(1).jpg"); 
   background-repeat: no-repeat; /* Prevent the image from repeating */
   background-size: cover; /* Scale the image to cover the entire area */
   background-position: center center;

@@ -1,8 +1,8 @@
-import starters from "./logo/starters2.jpg";
-import mainCourse from "./logo/main-course.jpg";
-import desserts from"./logo/desserts.jpg";
-import sideSalads from"./logo/sides.jpg";
-import beverages from "./logo/beverages (2).jpg";
+import starters from "../../assets/starters2.jpg";
+import mainCourse from "../../assets/main-course.jpg";
+import desserts from"../../assets/desserts.jpg";
+import sideSalads from"../../assets/sides.jpg";
+import beverages from "../../assets/beverages (2).jpg";
 
 export const menuItems2 = [
   {

@@ -1,20 +1,20 @@
-import coconut from "./logo/coconut.jpg";
-import pumpkin from"./logo/pumpkin-pie.jpg";
-import lava from "./logo/lava_flow.jpg";
-import strawberry from "./logo/beverages (2).jpg";
-import navam from "./logo/navam.jpg";
-import cranberry from "./logo/cranberry-salad.jpg";
-import macaroni from "./logo/macaroni-cheese.jpg";
-import fish from "./logo/steamed-fish.jpg";
-import goong from "./logo/tomyum.jpg";
-import baked from "./logo/baked-vegetables.jpg";
-import salad from "./logo/starters2.jpg";
-import turkey from "./logo/turkey.png";
-import mashed from "./logo/mashed-potatoes.jpg";
-import steak from "./logo/steak.jpg";
-import banana from "./logo/banana.png";
-import gelato from "./logo/strawberry.png";
-import greek from "./logo/greek.png"
+import coconut from "../../assets/coconut.jpg";
+import pumpkin from"../../assets/pumpkin-pie.jpg";
+import lava from "../../assets/lava_flow.jpg";
+import strawberry from "../../assets/beverages (2).jpg";
+import navam from "../../assets/navam.jpg";
+import cranberry from "../../assets/cranberry-salad.jpg";
+import macaroni from "../../assets/macaroni-cheese.jpg";
+import fish from "../../assets/steamed-fish.jpg";
+import goong from "../../assets/tomyum.jpg";
+import baked from "../../assets/baked-vegetables.jpg";
+import salad from "../../assets/starters2.jpg";
+import turkey from "../../assets/turkey.png";
+import mashed from "../../assets/mashed-potatoes.jpg";
+import steak from "../../assets/steak.jpg";
+import banana from "../../assets/banana.png";
+import gelato from "../../assets/strawberry.png";
+import greek from "../../assets/greek.png"
 
 export const menuItems = [
   {

@@ -1,7 +1,7 @@
 import { render, screen, fireEvent } from '@testing-library/react';
-import BookingForm from './bookingForm';
-import { initializeTimes, updateTimes } from './Main';
-import * as api from './Api';
+import BookingForm from '../booking/BookingForm';
+import { initializeTimes, updateTimes } from '../../Main';
+import * as api from './src';
 
 test('renders the bookingForm heading', () => {
   render(<BookingForm />);

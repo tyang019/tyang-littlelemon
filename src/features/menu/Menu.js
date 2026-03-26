@@ -7,6 +7,7 @@ function Menu() {
           color: "black",
           width: "30rem",
           }}/></h1></article></section>
+          
     <section className="menu_items">
       {menuItems2.map((category, index) => (
           <article key={index} className="menuText">

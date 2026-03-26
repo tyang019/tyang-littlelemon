@@ -1,8 +1,8 @@
 import { useState } from "react";
-import gpsIcon from "./logo/gps.png";
-import mailIcon from "./logo/mail.png";
-import clockIcon from "./logo/clock.png";
-import messageFood from "./logo/message-food.jpg";
+import gpsIcon from "../../assets/gps.png";
+import mailIcon from "../../assets/mail.png";
+import clockIcon from "../../assets/clock.png";
+import messageFood from "../../assets/message-food.jpg";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -33,7 +33,7 @@ function Contact() {
   return (
     <>
       <section>
-         <article><h1>About <hr style={{
+         <article><h1>About Us<hr style={{
           color: "black",
           width: "30rem",
           }}/>
@@ -81,7 +81,7 @@ function Contact() {
       </section>
 
          <section>
-            <article><h1>Contact us</h1></article>
+            <article><h1>Contacts</h1></article>
             </section>
             {/* Location */}
             <section> 

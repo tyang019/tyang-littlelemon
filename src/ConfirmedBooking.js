@@ -1,4 +1,4 @@
-import confirmPic from "./logo/food-tray.png"
+import confirmPic from "./assets/food-tray.png"
 
 
 function ConfirmedBooking(){

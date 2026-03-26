@@ -1,4 +1,4 @@
-import clock from "./logo/clock.png";
+import clock from "../../assets/clock.png";
 import { useState, useEffect } from "react";
 
 function BookingForm({ availableTimes, dispatch, submitForm}) {

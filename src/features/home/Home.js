@@ -1,8 +1,8 @@
-import './index.css';
-import logoBanner from "./logo/banner (2).jpg";
-import gourmetLogo from "./logo/specials.jpg";
-import percentLogo from "./logo/off.jpg";
-import bookLogo from "./logo/book.jpg";
+import "../../index.css";
+import logoBanner from "../../assets/banner (2).jpg";
+import gourmetLogo from "../../assets/specials.jpg";
+import percentLogo from "../../assets/off.jpg";
+import bookLogo from "../../assets/book.jpg";
 import { Link } from "react-router-dom";
 
 function Home(){

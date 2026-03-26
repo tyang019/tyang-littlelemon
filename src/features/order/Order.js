@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { menuItems } from "./menuData2";
-import "./index.css";
+import { menuItems } from "../menu/menuData2";
+import "../../index.css";
 
 function Order() {
   const [cart, setCart] = useState([]);
