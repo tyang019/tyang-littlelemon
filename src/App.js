@@ -11,10 +11,10 @@ import Percent from"./Percent";
 import Specials from "./Specials";
 import Main from "./Main";
 import ConfirmedBooking from "./ConfirmedBooking";
-
 import Contact from "./features/contact/Contact";
 import Order from "./features/order/Order";
 import footerLogo from "./assets/Asset 20@4x.png";
+import User from "./User";
 
 function App() {
 
@@ -36,7 +36,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
 
         <Route path="/order" element={<Order />} />
-        
+        <Route path="/user" element={<User />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/booking" element={<Main />}/>
         <Route path="/specials" element={<Specials />} />
