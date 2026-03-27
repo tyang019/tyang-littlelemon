@@ -57,15 +57,18 @@ function BookingForm({ availableTimes, dispatch, submitForm}) {
               required
             />
             <table style={{
-                display: "flex", 
-                justifyContent: "center", alignItems: "center",
+                display: "block", 
+                justifyContent: "center", 
+                alignItems: "center",
                 padding: "1rem"
                 }}>
              <img src={clock} alt="clock icon"  aria-hidden="true" 
              />
             </table>
+
+            
         <article>
-            <label style={{padding: "1rem"}} htmlFor="res-time">Select Time</label>
+            <label style={{padding: "1.5rem"}} htmlFor="res-time">Select Time</label>
               <select
               id="res-time"
               value={time}
@@ -81,7 +84,9 @@ function BookingForm({ availableTimes, dispatch, submitForm}) {
             </select>
           </article>
           <article>
-              <label htmlFor="guest">Number of guests</label>
+              <label style={{
+                padding: "1.5rem",
+                }} htmlFor="guest">Number of guests</label>
             <input
               type="number"
               min="1"
@@ -91,19 +96,28 @@ function BookingForm({ availableTimes, dispatch, submitForm}) {
               onChange={(e) => setGuest(Number(e.target.value))}
               required
             />
-              <label style={{padding: "1rem"}} htmlFor="occasion">Occasion</label>
+              <label style={{
+                padding: "1.5rem",
+                display: "block",
+                }} 
+                htmlFor="occasion">Occasion
             <select
               id="occasion"
               value={occasion}
               onChange={(e) => setOccasion(e.target.value)}
+              style={{
+                marginLeft: "1rem",
+              }}
             >
               <option>None</option>
               <option>Birthday</option>
               <option>Anniversary</option>
-            </select>
+            </select></label>
           </article>
 
-            <article>
+            <article style={{
+              
+            }}>
                 <button 
                 type="button" 
                 aria-label="On Click"
@@ -116,6 +130,7 @@ function BookingForm({ availableTimes, dispatch, submitForm}) {
               }}>Cancel</button>
               <button type="submit" disabled={!isFormValid}>Submit</button>
             </article>
+ 
           </form>
         </article>
       </section>
