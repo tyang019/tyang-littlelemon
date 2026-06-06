@@ -3,7 +3,7 @@ import { menuItems2 } from "./menuData";
 function Menu() {
   return (
     <div>
-    <section><article><h1>Menu  <hr style={{
+    <section><article><h1>Menu<hr style={{
           color: "black",
           width: "30rem",
           }}/></h1></article></section>
