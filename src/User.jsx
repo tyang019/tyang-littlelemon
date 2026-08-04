@@ -24,51 +24,43 @@ const [registerData, setRegisterData] = useState({
   console.log("Login data submitted:", loginData);
  }
   return (
-    <section>
-      <article className="message-form">
-        <form onSubmit={handleSubmit} >
-          <h1 style={{
-            width: "100%",
-            height: "100px",
-            textAlign: "center",
-            marginBottom: "1rem",
-            margin: "1rem 0",
-            padding: "1rem",
-          }}>Account Sign In</h1>
-          <article className="label-input">
-            <label htmlFor="email">Email</label>
-            <input 
-              type="email" 
-              id="email" 
-              name="email" 
-              value={loginData.email} 
-              required
-              onChange={handleChange} 
-            />
-            <label htmlFor="password">Password</label>
-            <input 
-              type="password" 
-              id="password" 
-              name="password" 
-              value={loginData.password} 
-              required
-              onChange={handleChange} 
-            />
-          </article>
+    <section >
+      <article style={{
+        display: "flex",
+        width: "100%",
+        justifyContent: "space-around",
+        flexWrap: "wrap",
+      }}>
+        <form className="access-form" onSubmit={handleSubmit} >
+          <h1 className="h1-style">Sign In</h1>
+            <article className="label-input">
+              <label htmlFor="email">Email:</label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                value={loginData.email} 
+                required
+                onChange={handleChange} 
+              />
+              <label htmlFor="password">Password:</label>
+              <input 
+                type="password" 
+                id="password" 
+                name="password" 
+                value={loginData.password} 
+                required
+                onChange={handleChange} 
+              />
+              
+            </article>
         <button type="submit">Sign In</button>
         </form>
     
-        <form>
-          <h1 style={{
-            width: "100%",
-            height: "100px",
-            textAlign: "center",
-            marginBottom: "1rem",
-            margin: "1rem 0",
-            padding: "1rem",
-          }}>Register</h1>
+        <form className="access-form" onSubmit={handleSubmit}>
+          <h1 className="h1-style">Register</h1>
           <article className="label-input">
-            <label htmlFor="name">Full Name</label>
+            <label htmlFor="name">Full Name:</label>
             <input
               type="text"
               id="name"
@@ -77,7 +69,7 @@ const [registerData, setRegisterData] = useState({
               required
               onChange={handleChange}
             ></input>
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email">Email:</label>
             <input
               type="email"
               id="email"
@@ -86,7 +78,7 @@ const [registerData, setRegisterData] = useState({
               required
               onChange={handleChange}
             ></input>
-            <label htmlFor="password">Password</label>
+            <label htmlFor="password">Password:</label>
             <input
               type="password"
               id="password"
@@ -95,7 +87,7 @@ const [registerData, setRegisterData] = useState({
               required
               onChange={handleChange}
             ></input>
-            <label htmlFor="phone">Phone</label>
+            <label htmlFor="phone">Phone:</label>
             <input
               type="text"
               id="phone"
@@ -103,9 +95,9 @@ const [registerData, setRegisterData] = useState({
               value={registerData.phone}
               required
               onChange={handleChange}
-            ></input>
-          </article>
-          <button type="submit">Register</button>          
+            ></input> 
+          </article>   
+          <button type="submit">Register</button>
         </form>
       </article>
     </section>
