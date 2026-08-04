@@ -391,6 +391,10 @@ h3{
   border-radius: 8px;
   margin-bottom: 10px;
 }
+form{
+  width: 50%;
+  margin: 0 auto;
+}
 .message-form{
   background-color:rgb(241, 241, 189); 
   border: 0.1rem solid rgb(182, 182, 137); 
@@ -398,6 +402,20 @@ h3{
   margin: 1rem; 
   box-shadow: rgb(84, 84, 84) 1px 1px 7px; 
   flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+}
+.label-input{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+label {
+  font-weight: bold;
+  margin-top: 0.5rem; 
+  display: flex;
+  flex-direction: row;
 }
 .menu_description{
   width: 23rem;
