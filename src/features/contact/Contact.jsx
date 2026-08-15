@@ -68,7 +68,8 @@ function Contact() {
           backgroundColor: "beige",
           borderRadius: "2rem",
           textAlign: "left",
-          padding: "1rem"
+          padding: "1rem",
+          boxShadow: "1px 1px 7px rgb(84, 84, 84)"
         }}>
           <p style={{fontSize: "20px"}}>
             Little Lemon Restaurant is a cozy Mediterranean eatery dedicated to bringing authentic flavors and fresh ingredients to every dish. Our menu features a wide variety of traditional recipes, from zesty appetizers to hearty main courses, all crafted with care and passion. Whether you’re joining us for a casual lunch, a family dinner, or a special celebration, Little Lemon offers a warm and inviting atmosphere that makes every visit memorable.
@@ -79,31 +80,28 @@ function Contact() {
         </section>
         </article>
       </section>
-
-         <section>
-            <article><h1>Contacts</h1></article>
-            </section>
-            {/* Location */}
-            <section> 
-               <article style={cardStyle}>
-              <h1 style={{ fontSize: "25px" }}>Location</h1>
-              <img src={gpsIcon} style={iconStyle} alt="Location" />
-              <p style={{fontSize: "20px"}}>1234 Lemon Street, Citrus City, TY 12345</p>
-              <p style={{fontSize: "20px"}}>Phone: (123) 456-7890</p>
-            </article>
-             {/* Mail */}
-            <article style={cardStyle}>
-              <h1 style={{ fontSize: "25px" }}>Mail</h1>
-              <img src={mailIcon} style={iconStyle} alt="Mail" />
-              <p style={{fontSize: "20px"}}>Email: contact@littlelemon.com</p>
-              <p style={{fontSize: "20px"}}>Alternative Email: yang.tortrong@yahoo.com</p>
-            </article>
-            {/* Hours */}
-            <article style={cardStyle}>
-              <h1 style={{ fontSize: "25px" }}>Hours</h1>
-              <img src={clockIcon} style={iconStyle} alt="Hours" />
-              <p style={{fontSize: "20px"}}>Monday - Friday: 9:00 AM - 9:00 PM</p>
-              <p style={{fontSize: "20px"}}>Saturday - Sunday: 10:00 AM - 8:00 PM</p>
+      <section>
+        <article><h1>Contacts</h1></article>
+      </section>
+            <section style={cardStyle}> 
+              
+              <article style={contactCardStyle}>
+                  <h1 style={{ fontSize: "30px" }}>Location</h1>
+                  <img src={gpsIcon} style={iconStyle} alt="Location" />
+                  <p style={{fontSize: "20px"}}>1234 Lemon Street, Citrus City, TY 12345</p>
+                  <p style={{fontSize: "20px"}}>Phone: (123) 456-7890</p>
+                </article>
+              <article style={contactCardStyle}>
+                <h1 style={{ fontSize: "30px" }}>Mail</h1>
+                <img src={mailIcon} style={iconStyle} alt="Mail" />
+                <p style={{fontSize: "20px"}}>Email: contact@littlelemon.com</p>
+                <p style={{fontSize: "20px"}}>Alternative Email: yang.tortrong@yahoo.com</p>
+              </article>
+              <article style={contactCardStyle}>
+                <h1 style={{ fontSize: "30px" }}>Hours</h1>
+                <img src={clockIcon} style={iconStyle} alt="Hours" />
+                <p style={{fontSize: "20px"}}>Monday - Friday: 9:00 AM - 9:00 PM</p>
+                <p style={{fontSize: "20px"}}>Saturday - Sunday: 10:00 AM - 8:00 PM</p>
             </article>
         </section>
 
@@ -112,79 +110,76 @@ function Contact() {
           <article style={formCardStyle}>
           <h1>Send a message</h1>         
           <form onSubmit={handleSubmit}>
+              <article >
+                <label style={labelStyle}>First Name:</label>
+                <input
+                  style={inputStyle}
+                  type="text"
+                  name="firstName"
+                  value={formData.firstName}
+                  onChange={handleChange}
+                  required
+                />
+              </article>
 
+              <article >
+                <label style={labelStyle}>Last Name:</label>
+                <input
+                  style={inputStyle}
+                  type="text"
+                  name="lastName"
+                  value={formData.lastName}
+                  onChange={handleChange}
+                  required
+                />
+              </article>
 
+              <article >
+                <label style={labelStyle}>Phone Number:</label>
+                <input
+                style={inputStyle}
+                  type="tel"
+                  name="phone"
+                  placeholder="123-456-7890"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  required
+                />
+              </article>
 
-<article >
-  <label style={labelStyle}>First Name:</label>
-  <input
-    style={inputStyle}
-    type="text"
-    name="firstName"
-    value={formData.firstName}
-    onChange={handleChange}
-    required
-  />
-</article>
+              <article >
+                <label style={labelStyle}>Email Address:</label>
+                <input
+                  style={inputStyle}
+                  type="email"
+                  name="email"
+                  placeholder="example@example.com"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                />
+              </article>
 
-<article >
-  <label style={labelStyle}>Last Name:</label>
-  <input
-    style={inputStyle}
-    type="text"
-    name="lastName"
-    value={formData.lastName}
-    onChange={handleChange}
-    required
-  />
-</article>
-
-<article >
-  <label style={labelStyle}>Phone Number:</label>
-  <input
-  style={inputStyle}
-    type="tel"
-    name="phone"
-    placeholder="123-456-7890"
-    value={formData.phone}
-    onChange={handleChange}
-    required
-  />
-</article>
-
-<article >
-  <label style={labelStyle}>Email Address:</label>
-  <input
-    style={inputStyle}
-    type="email"
-    name="email"
-    placeholder="example@example.com"
-    value={formData.email}
-    onChange={handleChange}
-    required
-  />
-</article>
-
-<article style={{
-        padding: "1rem",
-        display: "flex", 
-        }}>
-        <textarea
-        style={{
-          borderRadius:"1rem",
-          padding:"1rem",
-          flex: "1 1 300px",  // allow section to shrink and grow
-          display: "grid",
-        }}
-          name="message"
-          placeholder="Please share with us what you would like us to know"
-          rows="8"
-          
-          value={formData.message}
-          onChange={handleChange}
-          required
-      />
-</article>
+              <article style={{
+                      padding: "1rem",
+                      display: "flex", 
+                      }}>
+                      <textarea
+                      style={{
+                        borderRadius:"1rem",
+                        padding:"1rem",
+                        flex: "1 1 300px",  // allow section to shrink and grow
+                        display: "grid",
+                      }}
+                        name="message"
+                        placeholder="Please share with us what you would like us to know"
+                        rows="8"
+                        
+                        value={formData.message}
+                        onChange={handleChange}
+                        required
+                    />
+              </article>
               <button type="submit"
                 value="Submit">Submit</button>
           </form>
@@ -199,10 +194,19 @@ const cardStyle = {
   border: "solid 0.1rem rgb(182, 182, 137)",
   padding: "1rem",
   margin: "1rem",
+  width: "auto",
   backgroundColor: "white",
   boxShadow: "1px 1px 3px black",
-  
 };
+
+const contactCardStyle = {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    backgroundColor: "beige",
+    border: "solid 0.1rem rgb(182, 182, 137)",
+    padding: "0.5rem"
+ }
 
 const labelStyle = {
   width: "140px",
@@ -227,6 +231,7 @@ const formCardStyle = {
   backgroundColor: "rgb(241, 241, 189)",
   border: "solid 0.1rem rgb(182, 182, 137)",
   padding: "1rem",
+  width: "auto",
   margin: "1rem",
   boxShadow: "1px 1px 7px rgb(84, 84, 84)",
   flexWrap: "wrap",
