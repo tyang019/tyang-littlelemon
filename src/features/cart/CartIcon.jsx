@@ -1,8 +1,8 @@
 const CartIcon = ({ cartCount }) => {
   return (
-    <div className="cart-icon">
-      {cartCount > 0 && <span className="cart-count">{cartCount}</span>}
-    </div>
+     <span className="cart-count" aria-label={`${cartCount} items in cart`}>
+      {cartCount}
+    </span>
   );
 };
 

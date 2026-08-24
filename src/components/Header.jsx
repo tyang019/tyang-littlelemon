@@ -3,29 +3,14 @@ import profilePic from "../assets/profile-picture (1).png";
 import cartIcon from "../assets/shopping-cart.png";
 import logo from "../assets/Asset 16@4x.png";
 import { Link } from "react-router-dom";
+import CartIcon from "../features/cart/CartIcon";
+import { useCart } from "../features/cart/CartContext";
 
 
 function Header() {
+  const { itemCount } = useCart();//useCart hook to access itemCount state from CartContext, allowing the component to display the current number of items in the cart
   return (
     <header>
-      <div className="trolley">
-        <Link to="/user">
-          <img
-            className="trolley"
-            src={profilePic}
-            alt="User profile"
-          />
-        </Link>
-        <Link to="/cart">
-            <img
-            id="cartLogo"
-            className="trolley"
-            src={cartIcon}
-            alt="Shopping cart"
-          />          
-        </Link>
-      </div>
-
       <a href="/">
         <img
           className="logo"
@@ -33,8 +18,9 @@ function Header() {
           alt="Little Lemon logo"
         />
       </a>
-
-      <div className="search-bar-position">
+      <article className="header-right">
+        <div className="icon-sizes">
+        <div className="search-bar-position">
         <input
           id="input"
           className="search_bar"
@@ -43,8 +29,25 @@ function Header() {
         />
         <button className="search-button">Search</button>
       </div>
+        <Link to="/user">
+          <img
+            className="icon-sizes"
+            src={profilePic}
+            alt="User profile"
+          />
+        </Link>
+         <Link to="/cart" className="cart-link" aria-label="View shopping cart">
+            <img
+            id="cartLogo"
+            className="icon-sizes"
+            src={cartIcon}
+            alt="Shopping cart"
+          />   
+          <CartIcon cartCount={itemCount} />       
+        </Link>
+      </div>
+      </article>
     </header>
   );
 }
-
 export default Header;

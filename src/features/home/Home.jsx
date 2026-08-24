@@ -7,17 +7,17 @@ import { Link } from "react-router-dom";
 
 function Home(){
   return(
-    <div>
     <section>
-        <article>
-          <div className="banner_class" style={{fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"}}>
-            Great food, Great mood.
-            <img src={logoBanner} alt="logo banner"/>
-          </div>
-        </article>
-      </section>
-
       <section>
+          <article>
+            <div className="banner_class" style={{fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"}}>
+              Great food, Great mood.
+              <article style={{display: "flex", justifyContent: "center"}}>
+                <img src={logoBanner} alt="logo banner"/>
+              </article>
+            </div>
+          </article>
+        </section>
         <article className="lowerNav">
           <div className="para">
             <p>Experience gourmet perfection</p>
@@ -55,7 +55,6 @@ function Home(){
           </Link>  
         </article>
       </section>
-    </div>
   );
 };
 export default Home;
