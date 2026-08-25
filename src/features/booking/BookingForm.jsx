@@ -40,7 +40,7 @@ function BookingForm({ availableTimes, dispatch, submitForm}) {
   return (
     <>
       <section>
-        <article className="menuText">
+        <article className="booking-form">
           <form onSubmit={handleSubmit}>
             <h1>Reserve Table Form</h1>
             <label htmlFor="res-date">Select Date</label>

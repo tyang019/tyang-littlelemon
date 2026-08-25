@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useCart } from "./CartContext";
 
-function Cart() {
+export default function Cart() {
   // 1. Extract values and helper functions individually from our custom hook
   const cartData = useCart();
   const items = cartData.items;
@@ -71,26 +71,36 @@ function Cart() {
       }
 
       return (
-        <article className="bc_menu" key={item.id}>
+        <article className="bc_menu" 
+        style={{ 
+          display: "flex", 
+          justifyContent: "start", 
+          alignItems: "start", 
+          padding: "1rem", 
+          marginRight: "1rem", 
+          width: "100%",
+          height: "auto",
+        }} 
+          key={item.id}>
           {itemImage}
-          <h1>{item.name}</h1>
+          <h3>{item.name}</h3>
           <p>Price: ${formattedPrice}</p>
 
-          <section className="quantity-controls">
-            <button
-              onClick={handleDecrease}
-              aria-label={"Decrease " + item.name + " quantity"}
-            >
-              −
-            </button>
-            <span aria-live="polite">Quantity: {item.quantity}</span>
-            <button
-              onClick={handleIncrease}
-              aria-label={"Increase " + item.name + " quantity"}
-            >
-              +
-            </button>
-          </section>
+            <section className="quantity-controls">
+              <button
+                onClick={handleDecrease}
+                aria-label={"Decrease " + item.name + " quantity"}
+              >
+                −
+              </button>
+              <span aria-live="polite">Quantity: {item.quantity}</span>
+              <button
+                onClick={handleIncrease}
+                aria-label={"Increase " + item.name + " quantity"}
+              >
+                +
+              </button>
+            </section>
 
           <p className="item-subtotal">Subtotal: ${itemSubtotal}</p>
 
@@ -104,8 +114,8 @@ function Cart() {
     const formattedTotal = total.toFixed(2);
 
     mainContent = (
-      <section>
-        <article className="bc_menu">
+      <section >
+        <article >
           {itemCards}
         </article>
           <section >
@@ -120,17 +130,14 @@ function Cart() {
 
   // 6. Final UI Return statement
   return (
-    <main >
-      <section>
+    <main style={{ display: "grid", flexDirection: "row", alignItems: "center" }}>
+      <section style={{ margin: "0 auto", maxWidth: "800px" }}>
         <article>
           <h1>Shopping Cart</h1>
           {confirmationMessage}
           {mainContent}
         </article>
       </section>
-      
     </main>
   );
-}
-
-export default Cart;
+};

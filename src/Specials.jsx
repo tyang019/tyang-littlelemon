@@ -14,7 +14,7 @@ export default function Specials(){
       {items.length === 0 && <article><h1>No specials available</h1></article>}
       {items.filter(item => item.price < 13).map((category, index) => (
         <article  key = {index} className="bc_menu">
-          <div style={{
+          <article style={{
             display: "flex", 
             justifyContent: "start",
             alignItems: "start",
@@ -23,7 +23,7 @@ export default function Specials(){
           }}> 
             <img className="cart-image" src={category.image} alt={category.name} />
             <p>{category.name}...</p>
-              <div style={{
+              <article style={{
                 display: "flex",
                 flexDirection: "column",
               }}>
@@ -33,8 +33,8 @@ export default function Specials(){
                     marginLeft: "auto",
                     fontWeight: "bold",
                   }}>${category.price.toFixed(2)}</p>
-              </div>
-            </div> 
+              </article>
+            </article> 
         </article>
       ))};
     </section>

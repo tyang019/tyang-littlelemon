@@ -9,14 +9,10 @@ function Home(){
   return(
     <section>
       <section>
-          <article>
-            <div className="banner_class" style={{fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"}}>
+            <section className="banner_class" style={{fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"}}>
               Great food, Great mood.
-              <article style={{display: "flex", justifyContent: "center"}}>
-                <img src={logoBanner} alt="logo banner"/>
-              </article>
-            </div>
-          </article>
+              <img src={logoBanner} alt="logo banner"/>
+            </section>
         </section>
         <article className="lowerNav">
           <div className="para">

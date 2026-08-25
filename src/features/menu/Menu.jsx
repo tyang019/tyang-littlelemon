@@ -11,10 +11,12 @@ function Menu() {
     <section className="menu_items">
       {menuItems2.map((category, index) => (
           <article key={index} className="menuText">
-            <h1>{category.category} <hr style={{
+            <h1 style={{
+                      fontSize: "30px"
+                    }}>{category.category} <hr style={{
                       width: "auto", 
                       maxWidth: "100%", 
-                      fontSize: "20px",
+                      fontSize: "15px",
                       height: "1px", 
                       backgroundColor: "black", 
                       border: "none" }}/></h1>
@@ -23,13 +25,13 @@ function Menu() {
               alt={category.category}
               className="imgResize"
             />
-            <div>
+            <article>
               {category.items.map((item, i) => (
                 <p className="descItems" key={i}>
                   {item.name} <div className="descItems2">${item.price}</div>
                 </p>
               ))}
-            </div>
+            </article>
           </article>
       ))}
     </section>

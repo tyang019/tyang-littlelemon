@@ -19,8 +19,8 @@ function Header() {
         />
       </a>
       <article className="header-right">
-        <div className="icon-sizes">
-        <div className="search-bar-position">
+        <article className="icon-sizes">
+        <article className="search-bar-position">
         <input
           id="input"
           className="search_bar"
@@ -28,7 +28,7 @@ function Header() {
           type="text"
         />
         <button className="search-button">Search</button>
-      </div>
+      </article>
         <Link to="/user">
           <img
             className="icon-sizes"
@@ -45,7 +45,7 @@ function Header() {
           />   
           <CartIcon cartCount={itemCount} />       
         </Link>
-      </div>
+      </article>
       </article>
     </header>
   );
