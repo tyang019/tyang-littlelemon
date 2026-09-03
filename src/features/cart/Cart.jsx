@@ -71,17 +71,7 @@ export default function Cart() {
       }
 
       return (
-        <article className="bc_menu" 
-        style={{ 
-          display: "flex", 
-          justifyContent: "start", 
-          alignItems: "start", 
-          padding: "1rem", 
-          marginRight: "1rem", 
-          width: "100%",
-          height: "auto",
-        }} 
-          key={item.id}>
+        <article className="bc_menu cart-item" key={item.id}>
           {itemImage}
           <h3>{item.name}</h3>
           <p>Price: ${formattedPrice}</p>

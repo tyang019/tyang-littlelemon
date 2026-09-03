@@ -19,19 +19,19 @@ function Header() {
         />
       </a>
       <article className="header-right">
-        <article className="icon-sizes">
-        <article className="search-bar-position">
-        <input
-          id="input"
-          className="search_bar"
-          placeholder="Search"
-          type="text"
-        />
-        <button className="search-button">Search</button>
-      </article>
+        <div className="header-actions">
+          <article className="search-bar-position">
+          <input
+            id="input"
+            className="search_bar"
+            placeholder="Search"
+            type="text"
+          />
+          <button className="search-button">Search</button>
+        </article>
         <Link to="/user">
           <img
-            className="icon-sizes"
+            className="header-icon"
             src={profilePic}
             alt="User profile"
           />
@@ -39,13 +39,13 @@ function Header() {
          <Link to="/cart" className="cart-link" aria-label="View shopping cart">
             <img
             id="cartLogo"
-            className="icon-sizes"
+            className="header-icon"
             src={cartIcon}
             alt="Shopping cart"
           />   
           <CartIcon cartCount={itemCount} />       
         </Link>
-      </article>
+      </div>
       </article>
     </header>
   );
