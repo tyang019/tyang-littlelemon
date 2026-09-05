@@ -5,15 +5,6 @@ export default function Percent(){
     <section>
       <article>
         <h1>Enjoy our delicious dishes at half the price!</h1>
-
-        <hr
-          style={{
-            color: "black",
-            width: "30rem",
-            margin: "1rem auto",
-          }}
-        />
-
         <p className="message-form">
           Don't miss out on this limited-time offer. Treat yourself to a
           delightful dining experience with our 50% off specials. Whether

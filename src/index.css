@@ -67,10 +67,11 @@ textarea {
 }
 
 .quantity-controls {
-  display: grid;
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.75rem;
+  background-color: rgb(224, 209, 194);
 }
 .quantity-controls button {
   min-width: 2.5rem;
@@ -105,6 +106,7 @@ textarea {
 .cart-image {
   width: 150px;
   object-fit: cover;
+  margin: 0 auto;
   border-radius: 8px;
   margin-bottom: 10px;
 }
@@ -114,7 +116,7 @@ textarea {
   margin: 0 auto 1rem;
   padding: 1rem;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
   flex-wrap: wrap;
 }
 .cart-item > * {
@@ -192,8 +194,9 @@ nav ul {
   grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 0.75rem;
   margin: 0;
-  padding: 1rem;
+  padding: 0.5rem;
   list-style: none;
+  text-align: center;
 }
 .header-actions {
   display: flex;
@@ -309,7 +312,7 @@ nav button {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 400px;
+  height: fit-content;
   background-color: rgb(48, 48, 40);
   text-align: center;
   padding: clamp(1rem, 4vw, 3rem);
@@ -424,7 +427,7 @@ h3{
   background-color: whitesmoke;
   border-radius: 2rem;
   margin-bottom: 10px;
-  width: min(100%, 25rem);
+  width: min(100%, 50rem);
 }
 .menu_items2{
   display: flex;
@@ -437,12 +440,13 @@ h3{
   flex-wrap: wrap;
 }
 .menu_items{
-   width: 100%;
+  width: 100%;
   padding: 0 1rem;
   display: grid;
   grid-template-columns:
     repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); 
   grid-gap: 20px; 
+  margin-bottom: 1rem;
 }
 .menuText{
   background-color: white;
