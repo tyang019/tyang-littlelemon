@@ -368,7 +368,7 @@ div img{
 }
 @media(max-width: 768px){
   li{
-    display: flex;
+    display: block;
     padding: 0.5rem;
     border-radius: 2rem;
     }
