@@ -555,6 +555,7 @@ label {
   margin-top: 0.5rem; 
   display: flex;
   flex-direction: row;
+  width: 100%;
 }
 .menu_description{
  width: 100%;

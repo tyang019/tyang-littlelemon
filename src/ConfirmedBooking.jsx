@@ -5,7 +5,11 @@ function ConfirmedBooking(){
   const savedBooking = JSON.parse(localStorage.getItem('booking'));
 
   return(
-  <div style={{display:"flex", justifyContent: "center", marginBottom: "4rem"}}>
+  <div style={{
+    display:"flex", 
+    justifyContent: "center", 
+    marginBottom: "4rem"
+    }}>
     <div className="menuText">
       <section>
         <article>
