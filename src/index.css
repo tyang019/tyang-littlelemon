@@ -356,7 +356,7 @@ div img{
   object-fit: cover;
 }
 .long{
-  height: 25rem;
+  height: auto;
   width: auto;
   object-fit: cover;
 }
@@ -368,7 +368,7 @@ div img{
 }
 @media(max-width: 768px){
   li{
-    display: block;
+    display: flex;
     padding: 0.5rem;
     border-radius: 2rem;
     }
@@ -429,7 +429,7 @@ h3{
 .menu_items2{
   display: flex;
   justify-content: space-evenly;
-  grid-gap: 20px; 
+  grid-gap: 15px; 
   width: 100%;
   margin-left: 0;
   padding: 0 1rem;

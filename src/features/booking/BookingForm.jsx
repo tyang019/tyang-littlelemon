@@ -57,7 +57,7 @@ function BookingForm({ availableTimes, dispatch, submitForm}) {
               required
             />
             <table style={{
-                display: "block", 
+                display: "flex", 
                 justifyContent: "center", 
                 alignItems: "center",
                 padding: "1rem"

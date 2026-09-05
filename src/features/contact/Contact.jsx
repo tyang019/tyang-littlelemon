@@ -33,10 +33,7 @@ function Contact() {
   return (
     <>
       <section>
-         <article><h1>About Us<hr style={{
-          color: "black",
-          width: "30rem",
-          }}/>
+         <article><h1>About Us<h1/>
           </h1></article>
         <article style={{
           backgroundColor:"white", 
@@ -84,7 +81,6 @@ function Contact() {
         <article><h1>Contacts</h1></article>
       </section>
             <section style={cardStyle}> 
-              
               <article style={contactCardStyle}>
                   <h1 style={{ fontSize: "30px" }}>Location</h1>
                   <img src={gpsIcon} style={iconStyle} alt="Location" />

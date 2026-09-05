@@ -27,7 +27,6 @@ function Order() {
       <article>  
        <h1>
           Order Items
-          <hr style={{ color: "black", width: "30rem" }} />
       </h1>  
         <p aria-live="polite">
           {cartStatus} {/*display the cart status*/}
